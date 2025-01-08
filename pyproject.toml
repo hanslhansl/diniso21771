@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diniso21771"
+version = "0.1.0"
+description = "Implementation of DIN ISO 21771 - Gears – Cylindrical involute gears and gear pairs – Concepts and geometry"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+authors = [{name = "hanslhansl", email = "p4u1_1@posteo.at"}]
+dependencies = [
+]
+
+[tool.setuptools]
+packages = ["diniso21771"]
