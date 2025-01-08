@@ -6,9 +6,9 @@ from typing import Optional, Any
 from scipy import optimize
 import math as m
 
-def involute(alpha):
+def involute(alpha : float):
     return m.tan(m.radians(alpha)) - m.radians(alpha)
-def inverse_involute(alpha, anfangswert = 20):
+def inverse_involute(alpha : float, anfangswert = 20.):
     try:
         return float(optimize.newton(lambda x: involute(x) - alpha, anfangswert))
     except RuntimeError:
