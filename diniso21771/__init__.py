@@ -7,6 +7,7 @@ from scipy import optimize
 import math as m
 
 def involute(alpha : float):
+    """alpha in degrees"""
     return m.tan(m.radians(alpha)) - m.radians(alpha)
 def inverse_involute(alpha : float, anfangswert = 20.):
     try:

@@ -10,6 +10,7 @@ readme = "README.md"
 license = {file = "LICENSE.txt"}
 authors = [{name = "hanslhansl", email = "p4u1_1@posteo.at"}]
 dependencies = [
+    "scipy"
 ]
 
 [tool.setuptools]
