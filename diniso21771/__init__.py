@@ -87,7 +87,6 @@ class GearGeometry:
         self.beta = beta
         self.k = k
 
-        _print("Getriebegeometrie")
         [_print(key, "=", value) for key, value in vars(self).items()]
 
         assert all(bezugsprofil[idx].alpha_n == bezugsprofil[Ritzel].alpha_n for idx in _indices)
