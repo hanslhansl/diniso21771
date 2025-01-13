@@ -183,5 +183,4 @@ class GearGeometry:
         assert self.d_a[Ritzel] <= _d_amax[Ritzel]
         assert self.d_a[Rad] <= _d_amax[Rad]
 
-        _print()
         return
