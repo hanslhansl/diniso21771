@@ -6,12 +6,19 @@ build-backend = "setuptools.build_meta"
 name = "diniso21771"
 version = "0.1.0"
 description = "Implementation of DIN ISO 21771 - Gears – Cylindrical involute gears and gear pairs – Concepts and geometry"
+requires-python = ">=3.10"
 readme = "README.md"
 license = {file = "LICENSE.txt"}
-authors = [{name = "hanslhansl", email = "p4u1_1@posteo.at"}]
+authors = [{name = "hanslhansl"}]
 dependencies = [
     "scipy"
 ]
 
 [tool.setuptools]
 packages = ["diniso21771"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=5.0.0"
+]
